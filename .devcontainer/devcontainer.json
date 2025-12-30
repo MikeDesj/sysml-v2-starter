@@ -1,0 +1,15 @@
+{
+  "name": "SysML v2 Professional",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
+    }
+  },
+  "postCreateCommand": "rm -rf SysML-v2-Release && git clone --depth 1 https://github.com/Systems-Modeling/SysML-v2-Release.git && cd SysML-v2-Release/install/jupyter && chmod +x install.sh && ./install.sh"
+}

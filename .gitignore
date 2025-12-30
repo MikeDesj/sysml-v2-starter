@@ -1,0 +1,14 @@
+# Ignore the SysML engine (it is downloaded automatically by the container)
+SysML-v2-Release/
+sysml-v2-pilot-*/
+
+# Ignore Python/Jupyter temporaries
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Ignore VS Code settings (optional, but good practice for team repos)
+.vscode/
+
+# Ignore Mac system files
+.DS_Store
